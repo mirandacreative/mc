@@ -1,0 +1,203 @@
+// Basic Styles
+// ------------
+
+body {
+	//background-color: $teal;
+}
+
+.button {
+	font-family: $header-font-family;
+	text-transform: uppercase;
+	font-weight: bold;
+}
+
+.amp {
+	font-family: $body-font-family;
+	font-style: italic;
+}
+
+// Navigation Styles
+// -----------------
+
+@include breakpoint ( medium ) {
+	.sticky-container {
+		position: absolute;
+		z-index: 100;
+		width: 100%;
+	}
+}
+
+.top-bar{
+	background-color: transparent;
+
+	.top-bar-title{
+		@include breakpoint( small only) {
+			margin-right: 0;
+			text-align: center;
+			float: none;
+		}
+	}
+
+	svg{
+		width: 75%;
+		margin: 0 1rem;
+
+		path{
+			fill: #000000; 
+			//fill: #ffffff;
+			transition: fill 100ms ease-in-out;
+		}
+
+		g path{
+			//fill: #000000;
+			// fill: #ffffff;
+			//fill: #A9955E; //Gold
+			fill: #9f3122;
+		}
+	}
+}
+
+// Slides
+// ------
+.slide {
+	min-height: 100vh;
+	width: 100% !important; // prevents scrollmagic from pinning width of element
+	background-color: #fff;
+	position: relative;
+	background-size: 33vw;
+
+	@include breakpoint ( medium ) {
+		background-repeat: no-repeat;
+		background-position: left 10% center;
+		background-attachment: fixed;
+	}
+}
+
+.slide-1 {
+	background-attachment: scroll;
+	background-size: cover;
+	background-image: url(../img/mcbg.jpg);
+	@media screen and (max-width: 39.9375em) {
+		background-image: none;
+		    min-height: initial;
+	}
+	.splash{
+		margin-right: -80px !important;
+		@media screen and (max-width: 39.9375em) {
+			margin-right: 0px;
+		}
+		//hiding image at larger screens
+		@media screen and (min-width: 40em) {
+			img{
+				display:none;
+			}
+		}
+	}
+
+}
+
+
+.slide-2 {
+	background-color: #282b3c;
+	@include breakpoint ( medium ) {
+		background-image: url(../img/ampersand-neon.png);
+	}
+}
+
+.slide-3 {
+	background-color: $campaigns-blue;
+	@include breakpoint ( medium ) {
+		background-image: url(../img/ampersand-campaigns.png);
+	}
+}
+
+.slide-4 {
+	background-color: $yellow;
+	@include breakpoint ( medium ) {
+		background-image: url(../img/ampersand-map.png);
+		margin-bottom: rem-calc(100);
+	}
+}
+
+.caption {
+	color: #fff;
+
+	small {
+		font-family: $body-font-family;
+		text-transform: lowercase;
+		font-weight: normal;
+		font-style: italic;
+		color: inherit;
+	}
+
+	h1 {
+		border-bottom: 2px solid #fff;
+		line-height: 1.2;
+		margin-bottom: rem-calc(30);
+		padding-bottom: rem-calc(25);
+		text-transform: uppercase;
+		text-align: center;
+		margin-top: rem-calc(20);
+	}
+
+	ul li {
+		margin-bottom: rem-calc(15);
+	}
+
+	@include breakpoint ( medium ) {
+		margin-top: 50vh;
+		transform: translate(0, -50%);
+
+		h1{
+			text-align: left;
+			margin-top: 0;
+		}
+	}
+	.caption-content.main{
+		// background: rgba(255, 255, 255, 0.9);
+		padding: 5%;
+		text-align:center;
+		h1{
+			    border-bottom: none;
+		}
+		.color{
+			color: #ffffff;
+			p{
+				background: rgba(159, 49, 34, 0.6);
+				text-transform: uppercase;
+				font-family: 'Work Sans', sans-serif;
+				font-weight: 900;
+				font-size: 7rem;
+				padding: 0px;
+				line-height: 6.8rem;
+				padding-right: 7.4rem;
+				@media screen and (max-width: 39.9375em) {
+					font-size: 3rem;
+					padding: 0px;
+					margin:0.3rem;
+					line-height: 2.8rem;
+				}
+				&.cel{
+					font-size:5rem;
+					@media screen and (max-width: 39.9375em) {
+						font-size:2.5rem;
+					}
+				}
+			}
+		}
+	}
+}
+
+.contact {
+	.menu li a {
+		padding-bottom: 0;
+	}
+
+	.menu li:first-child a{
+		padding-left: 0;
+	}
+
+	i {
+		font-size: 2rem;
+	}
+}
