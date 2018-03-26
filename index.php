@@ -104,8 +104,10 @@
 
         <section class="slide slide-5 careers">
             <div class="row">
-                <div class="medium-6">
-                    <h1></h1>
+                <div class="medium-6" id="join-our-team-left-column">
+                    <div class="join-our-team-text">
+                        <h1 id="join-our-team-big-text">JOIN OUR TEAM</h1>
+                    </div>
                 </div>
                 <div class="medium-6 columns caption">
                     <div class="caption-content">

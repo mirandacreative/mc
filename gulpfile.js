@@ -1,7 +1,7 @@
 var gulp = require('gulp');
 var browserSync = require('browser-sync').create();
 var $    = require('gulp-load-plugins')();
-
+var watch = require('gulp-watch');
 var sassPaths = [
   'bower_components/foundation-sites/scss',
   'bower_components/motion-ui/src'
