@@ -22,8 +22,7 @@ $(function () { // wait for document ready
             .setPin(el)
             .addTo(controller)
             .on("enter", function (e) {
-                console.log(index);
-                if (index === 4) {
+                if (index >= 4 ) {
                     self.logoColor = "#69d5cc";
                 } else {
                     self.logoColor = self.prevSlide.css('background-color');
@@ -63,5 +62,34 @@ $(function () { // wait for document ready
     // 		});
     // }
 
+    $('#careers').hide();
+    $('.openings').hide();
+
+    $('#careers-link').click(function(e){
+
+        e.preventDefault();
+        $('#careers').show();
+
+        //get the top offset of the target anchor
+        var target_offset = $("#careers").offset();
+        var target_top = target_offset.top;
+
+        //goto that anchor by setting the body scroll top to anchor top
+        $('html, body').animate({scrollTop:target_top}, 1500);
+
+    });
+
+    $('#openings-link').click(function(e){
+
+        $('.openings').show();
+
+        //get the top offset of the target anchor
+        var target_offset = $("#openings").offset();
+        var target_top = target_offset.top;
+
+        //goto that anchor by setting the body scroll top to anchor top
+        $('html, body').animate({scrollTop:target_top}, 1500);
+
+    });
 
 });

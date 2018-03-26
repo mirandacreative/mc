@@ -1,9 +1,6 @@
 // Basic Styles
 // ------------
 
-body {
-	//background-color: $teal;
-}
 
 .button {
 	font-family: $header-font-family;
@@ -61,10 +58,12 @@ body {
 // ------
 .slide {
 	min-height: 100vh;
+	height: auto;
 	width: 100% !important; // prevents scrollmagic from pinning width of element
 	background-color: #fff;
 	position: relative;
 	background-size: 33vw;
+	padding-bottom: 200px;
 
 	@include breakpoint ( medium ) {
 		background-repeat: no-repeat;
@@ -119,6 +118,25 @@ body {
 	}
 }
 
+.slide-5 {
+	background-color: $yellow;
+	@include breakpoint ( medium ) {
+		background-image: url(../img/join-our-team.png);
+		background-size: auto;
+		margin-bottom: rem-calc(100);
+	}
+}
+
+.slide-6 {
+	background-color: $yellow;
+	@include breakpoint ( medium ) {
+		background-image: url(../img/join-our-team.png);
+		background-size: auto;
+		margin-bottom: rem-calc(100);
+	}
+}
+
+
 .caption {
 	color: #fff;
 
@@ -140,9 +158,9 @@ body {
 		margin-top: rem-calc(20);
 	}
 
-	ul li {
-		margin-bottom: rem-calc(15);
-	}
+	//ul li {
+	//	margin-bottom: rem-calc(15);
+	//}
 
 	@include breakpoint ( medium ) {
 		margin-top: 50vh;
@@ -172,15 +190,16 @@ body {
 				line-height: 6.8rem;
 				padding-right: 7.4rem;
 				@media screen and (max-width: 39.9375em) {
-					font-size: 3rem;
+					font-size: 2rem;
 					padding: 0px;
 					margin:0.3rem;
-					line-height: 2.8rem;
+					line-height: 2rem;
+					max-width: 78%;
 				}
 				&.cel{
 					font-size:5rem;
 					@media screen and (max-width: 39.9375em) {
-						font-size:2.5rem;
+						font-size:2rem;
 					}
 				}
 			}
@@ -202,20 +221,17 @@ body {
 	}
 }
 
-.careers {
+.careers, #openings{
 	background-color: #d7573f;
+	color: #fff;
+	font-family: "Oswald", "sans-serif";
+	height: auto !important;
+	background-image: url(../img/join-our-team.png);
+	background-size: auto;
 }
-
-#join-our-team-big-text{
-	font-family: "Oswald", sans;
-	font-size: 10rem;
-	margin: 15% 50% 15% 0;
-	text-align: center;
-	max-width: 50%;
-	color: #FFFFFF;
+#careers-body, .openings-body{
+	font-family: "Baskerville", "sans-serif";
 }
-.join-our-team-text{
-	display: flex;
-	align-items: center;
-	justify-content: center;
+.position-title{
+	border-bottom: 2px solid #fff;
 }
