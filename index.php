@@ -102,39 +102,6 @@
 			</div>
 		</section>
 
-        <section class="slide slide-5 careers">
-            <div class="row">
-                <div class="medium-6">
-                    <h1></h1>
-                </div>
-                <div class="medium-6 columns caption">
-                    <div class="caption-content">
-                        <h1><small>We Are</small><br>Here for You!</h1>
-                        <p>There are many ways to engage with us. Whichever you decide, we look forward to hearing from you!</p>
-                        <ul>
-                            <li>If you're a <em>social butterfly.</em><br>
-                                <ul id="social" class="menu">
-                                    <li><a href="https://www.facebook.com/MirandaCreative/twi" title="Facebook"><i class="fa fa-facebook"></i></a></li>
-                                    <li><a href="https://twitter.com/mirandacreative" title="Twitter"><i class="fa fa-twitter"></i></a></li>
-                                    <li><a href="https://www.instagram.com/mirandacreative/" title="Instagram"><i class="fa fa-instagram"></i></a></li>
-                                    <li><a href="https://www.linkedin.com/company/miranda-creative" title="LinkedIn"><i class="fa fa-linkedin"></i></a></li>
-                                </ul>
-                            </li>
-                            <li>Or the <em>chatty</em> type.<br> <a href="tel:18608876882">860.887.6882</a></li>
-                            <li>Prefer to <em>stop by</em> for a visit?<br>
-                                <span id="address">
-									18 Elm Ave <br>
-									Norwich, CT 06360 <br>
-									<a href="https://www.google.com/maps/dir//18+Elm+Avenue,+Norwich,+CT+06360/@41.5491884,-72.0965762,17z">Get Directions</a>
-								</span>
-                            </li>
-                            <li>Feel free to <em>send</em> us a note.<br> <a href="mailto:info@mirandacreative.com">info@mirandacreative.com</a></li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-        </section>
-
 
 		<script src="bower_components/jquery/dist/jquery.js"></script>
 		<script src="bower_components/what-input/what-input.js"></script>
